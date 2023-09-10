@@ -1,0 +1,20 @@
+{% extends "layout.html" %}
+
+{% block nav %}
+<li><a href="index.html">Home</a></li>
+<li><a href="CropRecommendation.html">Crop</a></li>
+<li><a href="FertilizerRecommendation.html">Fertilizer</a></li>
+<li><a href="PesticideRecommendation.html" >Pesticide</a></li>
+<li><a href="DiseaseDetection.html" class="active">Disease</a></li>
+
+{% endblock %}
+
+{% block body %}
+<br /><br />
+<h2 style="text-align: center; margin: 0px; color: black">
+    <b>Identified Disease: <i>Leaf Smut</i></b>
+</h2>
+
+<img style="border-radius: 5%;margin-left:5%; height:300px; width:300px;"
+                             class="img-fluid" src="static\img\DSC_0516.jpg" alt="prudent">
+{% endblock %}

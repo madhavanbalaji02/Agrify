@@ -1,0 +1,145 @@
+{% extends "layout.html" %}
+
+{% block nav %}
+<li><a href="index.html" class="active">Home</a></li>
+<li><a href="CropRecommendation.html">Crop</a></li>
+<li><a href="FertilizerRecommendation.html">Fertilizer</a></li>
+<li><a href="PesticideRecommendation.html">Pesticide</a></li>
+<li><a href="DiseaseDetection.html">Disease</a></li>
+{% endblock %}
+
+{% block body %}
+<section class="tm-welcome-section">
+    <div class="container tm-position-relative">
+      <div class="tm-lights-container">
+        <img src="{{ url_for('static', filename='img/light.png') }}" alt="Light" class="light light-1" height="188px" width="200px">
+        <img src="{{ url_for('static', filename='img/light.png') }}" alt="Light" class="light light-2" height="188px" width="200px">
+        <img src="{{ url_for('static', filename='img/light.png') }}" alt="Light" class="light light-3" height="188px" width="200px">
+        <br>
+      </div>
+      <div class="row tm-welcome-content">
+        <br><br>
+        <h2 class="white-text tm-handwriting-font tm-welcome-header">
+          </h2>
+        <h2 class="gold-text tm-welcome-header-2">AGRIFY</h2>
+        <p class="gray-text tm-welcome-description"><span
+            class="gold-text">Farm = AI + Crop + Fertilizer + Pesticide.</span> We take of your soil's health. We at <span class="gold-text">
+          AGRIFY</span>, honor <span
+                class="gold-text">the Indian Farmer's love, hard work and character.</span>
+          They help to feed a nation whose population is nearly 1.4 billion.
+          However their productivity is threatened by some natural factors that can ruin their crops and their livelihoods.
+          AGRIFY is a small initiative enhancing agriculture, make smart decisions to consider
+        the demographics of your field, the factors affecting your crop, as well as how to
+        keep them healthy for a super awesome yield.</p>
+        <br><br><br>
+      </div>
+      <img src="{{ url_for('static', filename='img/table-set.jpeg') }}" alt="Table Set" class="tm-table-set img-responsive" width="110%">
+    </div>
+  </section>
+  <div class="tm-main-section light-gray-bg">
+    <div class="container" id="main">
+      <section class="tm-section tm-section-margin-bottom-0 row">
+        <div class="col-lg-12 tm-section-header-container">
+          <h2 class="tm-section-header gold-text tm-handwriting-font">Our Services</h2>
+          <div class="tm-hr-container">
+            <hr class="tm-hr">
+          </div>
+        </div>
+        <div class="col-lg-12 tm-popular-items-container">
+          <div class="tm-popular-item">
+            <img src="{{ url_for('static', filename='img/popular-1.jpg') }}" alt="Popular" class="tm-popular-item-img" width="286px" height="166px">
+            <div class="tm-popular-item-description">
+              <h3 class="tm-handwriting-font tm-popular-item-title"><span
+                  class="tm-handwriting-font bigger-first-letter">C</span>rop Recommendation</h3>
+              <hr class="tm-popular-item-hr">
+              <p>Which crop to grow, that is ideally suited to conditions?
+                Make an informed decision before starting the cultivation of crops.</p>
+              <div class="order-now-container">
+                <a href="CropRecommendation.html" class="order-now-link tm-handwriting-font">Proceed Now</a>
+              </div>
+            </div>
+          </div>
+          <div class="tm-popular-item">
+            <img src="{{ url_for('static', filename='img/popular-3.png') }}" alt="Popular" class="tm-popular-item-img" width="286px" height="166px">
+            <div class="tm-popular-item-description">
+              <h3 class="tm-handwriting-font tm-popular-item-title"><span
+                  class="tm-handwriting-font bigger-first-letter">F</span>ertilizer Recommendation</h3>
+              <hr class="tm-popular-item-hr">
+              <p>Which fertilizer to choose for the cultivated soil and prescribed crop for optimum production?
+              Provide your crops, the essential nutrients.</p>
+              <div class="order-now-container">
+                <a href="FertilizerRecommendation.html" class="order-now-link tm-handwriting-font">Proceed Now</a>
+              </div>
+            </div>
+          </div>
+          <div class="tm-popular-item">
+            <img src="{{ url_for('static', filename='img/popular-2.jpg') }}" alt="Popular" class="tm-popular-item-img" width="286px" height="166px">
+            <div class="tm-popular-item-description">
+              <h3 class="tm-handwriting-font tm-popular-item-title"><span
+                  class="tm-handwriting-font bigger-first-letter">P</span>esticide Recommendation</h3>
+              <hr class="tm-popular-item-hr">
+              <p>Pests are a big threat.
+                Use Irrigreat to know which pesticide to use to control pests before they cause potential damage to your
+                crop?</p>
+              <div class="order-now-container">
+                <a href="PesticideRecommendation.html" class="order-now-link tm-handwriting-font">Proceed Now</a>
+              </div>
+            </div>
+          </div>
+          <div class="tm-popular-item">
+            <img src="{{ url_for('static', filename='img/dis.jpg') }}" alt="Popular" class="tm-popular-item-img" width="286px" height="166px">
+            <div class="tm-popular-item-description">
+              <h3 class="tm-handwriting-font tm-popular-item-title"><span
+                  class="tm-handwriting-font bigger-first-letter">D</span>isease Detection</h3>
+              <hr class="tm-popular-item-hr">
+              <p>Disease can infect paddy at all growth stages and all aerial parts of plant
+                Use Irrigreat to know which pesticide to know the crop disease</p>
+              <div class="order-now-container">
+                <a href="DiseaseDetection.html" class="order-now-link tm-handwriting-font">Proceed Now</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </div>
+
+<footer>
+    <div class="tm-black-bg">
+      <div class="container">
+        <div class="row margin-bottom-60">
+          <nav class="col-lg-3 col-md-3 tm-footer-nav tm-footer-div">
+            <h3 class="tm-footer-div-title">Our Team</h3>
+            <ul>
+              <li>HARIHARAN S</li>
+              <li>MOHAMMED SAKEEB MH</li>
+              <li>MADHAVAN B</li>
+            </ul>
+          </nav>
+          <div class="col-lg-5 col-md-5 tm-footer-div">
+            <h3 class="tm-footer-div-title">AGRIFY</h3>
+            <p class="margin-top-15" align="justify">DATA MINING</p>
+
+             <p class="margin-top-15" align="justify">CROP RECOMMENDATION</p>
+
+              <p class="margin-top-15" align="justify">FERTILIZER RECOMMENDATION</p>
+
+              <p class="margin-top-15" align="justify">IRRIGATION SYSTEM</p>
+
+              <p class="margin-top-15" align="justify">CROP FIRE PREVENTION</p>
+
+              <p class="margin-top-15" >PESTICIDE RECOMMENDATION AND DISEASE DETECTION</p>
+
+              <p class="margin-top-15" align="justify">CROP STORAGE SYSTEM</p>
+          </div>
+          
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div>
+    </div>
+  </footer>
+
+{% endblock %}
